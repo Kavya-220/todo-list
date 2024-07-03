@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg{
+   background: linear-gradient(135deg, #121e29, #1e0483ec); /* Gradient from dark color to black */
+  background-size: 400% 400%; /* Increase background size for smoother transition */
+  animation: gradientBG 60s linear infinite; /* Slow animation for smooth movement */
+  
+}
+@keyframes gradientBG {
+  0% {
+      background-position: 0% 0%;
+  }
+  100% {
+      background-position: 100% 100%;
+  }
+}
+.line-through {
+   text-decoration-thickness: 3px;
+  }
+.text-size{
+  font-size: 16px;
+}
+
+@media (max-width: 550px) {
+  .container {
+      max-width: 24rem;
+}
+}
+
+@media (max-width: 480px) {
+    .container {
+        @apply  py-6 ;
+        max-width: 23rem;
+    }
+
+    .title-container {
+        @apply mt-5 mb-3;
+    }
+
+    .title-container h1 {
+        @apply text-2xl ml-1;
+    }
+
+    .input-container {
+        @apply my-3;
+    }
+
+    .input-container input[type="text"] {
+        @apply h-10 px-3 text-base;
+    }
+
+    .input-container button {
+        @apply w-16 h-10 text-base;
+    }
+}
+
+@media (max-width: 400px) {
+  .container {
+       max-width: 20rem;
+       padding: 5px;
+}
+    .title-container {
+        @apply mt-4 mb-2;
+    }
+
+    .title-container h1 {
+        @apply text-xl ml-0;
+    }
+
+    .input-container {
+        @apply my-2;
+    }
+
+    .input-container input[type="text"] {
+        @apply h-10 px-2 text-sm;
+    }
+
+    button {
+        @apply w-14 h-10 ;
+        font-size: 13px;
+    }
+}
+@media (max-width: 350px) {
+  .container {
+       max-width: 18rem;
+       padding: 5px;
+}
+}

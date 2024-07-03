@@ -1,0 +1,17 @@
+.container{
+    border: 2px solid white;
+    background: linear-gradient(135deg, #121e29, #1e0483ec); /* Gradient from dark color to black */
+    background-size: 400% 400%; /* Increase background size for smoother transition */
+    animation: gradientBG 60s linear infinite; /* Slow animation for smooth movement */
+    
+}
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+   
